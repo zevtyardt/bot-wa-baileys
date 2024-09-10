@@ -11,21 +11,21 @@ This file is a JavaScript module that exports the `BaileysClass`, which extends 
 
 Use the stable version:
 ```
-npm i @bot-wa/bot-wa-baileys
+npm i @zevtyardt/bot-wa-baileys
 ```
 
 Then import your code using:
 ``` ts 
-import { BaileysClass } from '@bot-wa/bot-wa-baileys'
+import { BaileysClass } from '@zevtyardt/bot-wa-baileys'
 ```
 ``` js 
-const { BaileysClass } = require('@bot-wa/bot-wa-baileys');
+const { BaileysClass } = require('@zevtyardt/bot-wa-baileys');
 ```
 
 Use as bot-whatsapp provider [bot-whatsapp](https://bot-whatsapp.netlify.app/docs)
 
 ``` js
-const { BaileysClass } = require('@bot-wa/bot-wa-baileys') // OLD const BaileysProvider = require('@bot-whatsapp/provider/baileys')
+const { BaileysClass } = require('@zevtyardt/bot-wa-baileys') // OLD const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const adapterProvider = createProvider(BaileysClass) // ANTES -> const adapterProvider = createProvider(BaileysProvider)
 // OR CHANGE QR TO PAIRING CODE
 const adapterProvider = createProvider(BaileysClass, { usePairingCode: true, phoneNumber: 'XXXXXXXX' }) // ANTES -> const adapterProvider = createProvider(BaileysProvider)
@@ -84,7 +84,7 @@ Please note that these methods are asynchronous, meaning they return a promise t
 Here is an example of how to use the `BaileysClass`:
 
 ```javascript
-import {BaileysClass} from '@bot-wa/bot-wa-baileys';
+import {BaileysClass} from '@zevtyardt/bot-wa-baileys';
 
 const botBaileys = new BaileysClass({});
 
@@ -130,7 +130,7 @@ botBaileys.on('message', async (message) => {
 Here is an example of how to use the `BaileysClass`:
 
 ```javascript
-import {BaileysClass} from '@bot-wa/bot-wa-baileys';
+import {BaileysClass} from '@zevtyardt/bot-wa-baileys';
 
 const botBaileys = new BaileysClass({ usePairingCode: true, phoneNumber: 'XXXXXXXXXXX' });
 
